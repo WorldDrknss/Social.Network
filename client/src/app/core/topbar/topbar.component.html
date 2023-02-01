@@ -3,8 +3,10 @@
         The Social Network
     </div>
     <div class="account">
-      <button mat-icon-button>
-        <mat-icon>account_circle</mat-icon>
-      </button>
+      <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>account_circle</mat-icon></button>
+      <mat-menu #menu="matMenu">
+        <button (click)="logout()" mat-menu-item>Logout</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
     </div>
 </div>

@@ -30,6 +30,7 @@ export class LoginComponent implements OnInit {
       } else {
         if(res[0].password === this.loginForm.value.password){
           this.userService.user = res[0];
+          localStorage.setItem('user', JSON.stringify(res[0]));
           this.router.navigate(['/posts']);
         } else {
           this.snackbar.open('Incorrect Password', 'ok');
