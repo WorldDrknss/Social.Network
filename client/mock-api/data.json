@@ -1,4 +1,11 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "testuser@test.com",
+      "username": "Test",
+      "password": "Password",
+      "id": 1
+    }
+  ],
   "post": []
 }
