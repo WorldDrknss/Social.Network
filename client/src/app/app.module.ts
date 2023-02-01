@@ -12,7 +12,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { CreateAccountComponent } from './pages/create-account/create-account.component';
 
-import { ReactiveFormsModule, FormsModule} from '@angular/forms'
+import { ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ReactiveFormsModule, FormsModule} from '@angular/forms'
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
