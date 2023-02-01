@@ -15,6 +15,8 @@ import { CreateAccountComponent } from './pages/create-account/create-account.co
 import { ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { PostsComponent } from './pages/posts/posts.component';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     AppComponent,
     TopbarComponent,
     LoginComponent,
-    CreateAccountComponent
+    CreateAccountComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
