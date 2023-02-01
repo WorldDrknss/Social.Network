@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { UserService } from 'src/app/service/user.service';
 
 @Component({
   selector: 'app-create-account',
@@ -8,10 +9,10 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class CreateAccountComponent implements OnInit {
 
-  constructor(private fb:FormBuilder) {}
+  constructor(private fb:FormBuilder, public userService:UserService) {}
 
   ngOnInit(): void {
-    
+
   }
 
   createAccountForm = this.fb.group({
@@ -19,5 +20,13 @@ export class CreateAccountComponent implements OnInit {
     username:['',[Validators.required, Validators.maxLength(10)]],
     password:['',[Validators.required, Validators.minLength(6)]]
   });
+
+  create(){
+    this.userService.createNewUser(this.createAccountForm.value).then((res)=>{
+
+    }).catch((err)=>{
+
+    });
+  }
 
 }
