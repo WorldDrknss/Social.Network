@@ -3,14 +3,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://lab.skynetinc.tech/WorldDrknss/Social.Network">
-    <img src="logo.png" alt="Logo" height="100">
-  </a>
-
-<h3 align="center">The Social Network</h3>
+<a href="https://lab.skynetinc.tech/WorldDrknss/Social.Network"><h3 align="center">The Social Network</h3></a>
 
   <p align="center">
-    Proof of concept e-commerce store using Angular, .Net Core and Stripe for payment processing
     <br />
     <br />
     <a href="https://lab.skynetinc.tech/WorldDrknss/Social.Network/issues">Report Bug</a>
@@ -55,7 +50,7 @@ Login Page                 |  Create Account Page
 :-------------------------:|:-------------------------:
 ![](images/login.PNG)      |  ![](images/createaccount.PNG)
 
-Proof of concept e-commerce store using Angular, .Net Core and Stripe for payment processing
+Social Network
 
 * Angular
 * Google Firebase Storage
